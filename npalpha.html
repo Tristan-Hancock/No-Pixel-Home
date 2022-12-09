@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="npalphacss.css">
+    <meta charset="UTF-8">
+    <title>No Pixel India</title>
+    
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="" alt="logo"  class="logo" width="200" height="200">
+            <nav>
+                <ui>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Creators</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Suggestions</a></li>
+            </ui>
+            </nav>
+        </div>
+    </header>
+    <style>
+        
+      </style>
+      
+      
+      
+      <div class="sidebar">
+        <div class="sidebar-item"></div>
+        <div class="sidebar-item"></div>
+        <div class="sidebar-item"></div>
+      </div>
+      <div class="toggle-sidebar-btn">LIVE NOW 🔴 </div>
+      
+      <script>
+        
+        const sidebar = document.querySelector('.sidebar');
+        const toggleBtn = document.querySelector('.toggle-sidebar-btn');
+        
+        toggleBtn.addEventListener('click', () => {
+          sidebar.classList.toggle('active');
+        });
+      </script>
+      
+      
+     
+   
+      
+      <div id="card"></div>
+      
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script>
+        Access-Control-Allow-origin *:
+        $(function() {
+          $.getJSON("alphadata.json", function(data) {
+            $("#card").html(
+              `<div class="card">
+                <div class="card-thumbnail" style="background-image: url(${data.thumbnail_url})"></div>
+                <div class="card-body">
+                  <div class="card-title">${data.channel_title}</div>
+                  <div class="card-channel">${data.platform}</div>
+                  <div class="card-views">${data.total_view_count} views</div>
+                </div>
+              </div>`
+            );
+          });
+        });
+      </script>
+      
+      
+    
+
+    
+
+
+</body>
+
+<footer>
+
+        <p></p> 
+</footer>

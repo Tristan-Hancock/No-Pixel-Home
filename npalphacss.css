@@ -1,0 +1,163 @@
+footer {
+    clear: both;
+    position: relative;
+    height: 200px;
+    margin-top: -100px;
+}
+body{
+    margin: 0;
+    background-color: #222;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+}
+.container{
+    width: 80%;
+    margin: 0% auto;
+}
+header{
+    background: #55d6aa;
+
+}
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo{
+    float: left;
+    padding: 10px 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 400;
+    height: 700;
+    
+}
+nav{
+    float: right;
+}
+nav ul{
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+
+}
+nav li{
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 23px;
+    position: relative;
+
+}
+nav a {
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+
+}
+nav a.hover{
+    color: #000;
+}
+nav a::before{
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: #444;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+
+}
+nav a:hover::before{
+    width: 100%;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .sidebar-item {
+    padding: 20px;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .card-thumbnail {
+    width: 100%;
+    height: 180px;
+    background-color: #ccc;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card-title {
+    margin-bottom: 8px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .card-channel {
+    color: #777;
+    font-size: 14px;
+  }
+  
+  .card-views {
+    margin-top: auto;
+    font-size: 14px;
+    color: #777;
+  }
+  .sidebar {
+    position: fixed;
+    top: 40px;
+    left: 0;
+    bottom: 0;
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .sidebar.active {
+    transform: translateX(0);
+  }
+  
+  .sidebar-item {
+    padding: 20px;
+  }
+  
+  .toggle-sidebar-btn {
+    /* display: inline-block; */
+    position: fixed;
+    top: 0px;
+    right: left -1px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  /* @media (max-width: 600px){
+    .toggle-sidebar-btn{
+        font-size: 14px;
+        padding: 8px;
+    }
+  } */
+  
