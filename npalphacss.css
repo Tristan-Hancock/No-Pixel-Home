@@ -1,21 +1,22 @@
-footer {
-    clear: both;
-    position: relative;
-    height: 200px;
-    margin-top: -100px;
-}
 body{
-    margin: 0;
+  text-align: center;
+    margin-top: 0%;
     background-color: #222;
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
+    overflow-x: hidden;
 }
 .container{
     width: 80%;
     margin: 0% auto;
+    
+}
+.header-text{
+  font-size: large; /*not working */
 }
 header{
     background: #55d6aa;
+    margin-top: 1px;
 
 }
 header::after{
@@ -28,11 +29,15 @@ header::after{
     float: left;
     padding: 10px 0;
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: -8px;
+    left: 135px;
+   
     width: 400;
     height: 700;
     
+}
+li{
+  font-size: 15px;
 }
 nav{
     float: right;
@@ -75,45 +80,81 @@ nav a::before{
 nav a:hover::before{
     width: 100%;
 }
-.sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 200px;
-    background-color: #333;
-    color: #fff;
-  }
+
+  .card-container {
+    margin: 2px; /* Center the container horizontally on the page */
+    width: 100%; /* Adjust the width of the container to fit multiple cards on one line */
+    display: inline-block; 
+ } 
   
-  .sidebar-item {
-    padding: 20px;
-  }
   .card {
-    display: flex;
+    background-color: #222;
+    padding: 1rem;
+    border: 1px;
+    border-radius: 10px;
+    width: 20%;
+    margin-right: -270px;
+    margin-top: 20px;
+    margin-left: 300px;
+   /* display: inline-block; */
+    float: left;
+   /* margin-top: 100px;
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+    position: relative;
     flex-direction: column;
-    width: 300px;
+    border-radius: 10px;
+    margin: auto;
     background-color: #fff;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 400px;
+    float: left;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); */
   }
-  
+  .card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px ;
+  }
+ 
   .card-thumbnail {
+    border-radius: 10px;
+
+  
     width: 100%;
-    height: 180px;
-    background-color: #ccc;
+    height: 200px;
+    background-color: rgb(233, 223, 223);
+
   }
   
   .card-body {
-    padding: 20px;
+    
+    padding: 10px;
   }
-  
+  .card-bottom{
+    border-radius: 10px;
+
+  }
   .card-title {
+    background-color: rgb(215, 250, 248);
+   border-radius: 10px;
+   
+   
     margin-bottom: 8px;
-    font-size: 18px;
+    font-size: 25px;
     font-weight: bold;
+    float: left;
+  }
+  .platform{
+    display: block;
+    background-color: rgb(215, 250, 248);
+    font-size: 25px;
+    float:left;
+    border-radius: 10px;
+    margin-right: 15px;
   }
   
   .card-channel {
+    
     color: #777;
     font-size: 14px;
   }
@@ -122,17 +163,19 @@ nav a:hover::before{
     margin-top: auto;
     font-size: 14px;
     color: #777;
+    
   }
   .sidebar {
     position: fixed;
-    top: 40px;
+    top: 41px;
     left: 0;
     bottom: 0;
-    width: 200px;
+    width: 300px;
     background-color: #333;
     color: #fff;
     transform: translateX(-100%);
     transition: transform 0.3s ease-in-out;
+    ;
   }
   
   .sidebar.active {
@@ -144,20 +187,22 @@ nav a:hover::before{
   }
   
   .toggle-sidebar-btn {
-    /* display: inline-block; */
+   
     position: fixed;
     top: 0px;
-    right: left -1px;
-    background-color: #333;
+    left: 0px;
+   
+    background-color: rgb(14, 1, 1);
     color: #fff;
-    padding: 10px 15px;
-    border-radius: 4px;
+    padding: 11px 19px;
+    border-radius: 1%;
     cursor: pointer;
   }
-  /* @media (max-width: 600px){
-    .toggle-sidebar-btn{
-        font-size: 14px;
-        padding: 8px;
-    }
-  } */
-  
+ .current_watching{
+  background-color: #55d6aa;
+  font-size: large;
+ }
+h1{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: medium;
+}

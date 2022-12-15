@@ -3,16 +3,20 @@
     <link rel="stylesheet" href="npalphacss.css">
     <meta charset="UTF-8">
     <title>No Pixel India</title>
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <link href="https://www.thefoundrytypes.com/fonts/architype-stedelijk/#:~:text=Architype%20Stedelijk%20is%20part%20of,fonts%20from%20his%20experimental%20alphabets.">
+    
     
 
 </head>
 <body>
     <header>
         <div class="container">
-            <img src="" alt="logo"  class="logo" width="200" height="200">
+            <img src="NoPixelLogo2"  class="logo">
+        <div class="header-text">
             <nav>
                 <ui>
-                <li><a href="#">Home</a></li>
+                <li><a href="https://www.nopixel.net/upload/index.php" target="_blank">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Creators</a></li>
                 <li><a href="#">Contact</a></li>
@@ -20,61 +24,57 @@
             </ui>
             </nav>
         </div>
+        </div>
     </header>
-    <style>
+   
+   
+    <script src="npsidebar.js">
+
+
+    </script>
+
+
+
+      
+      <div class="sidebar" id="data-sidebar-output"> 
+        <h1> Support our streamers </h1>
+      </div> 
         
-      </style>
+        
+
+
       
-      
-      
-      <div class="sidebar">
-        <div class="sidebar-item"></div>
-        <div class="sidebar-item"></div>
-        <div class="sidebar-item"></div>
+
+        
       </div>
-      <div class="toggle-sidebar-btn">LIVE NOW 🔴 </div>
+      <div class="toggle-sidebar-btn">WATCH OUR STREAMERS LIVE🔴</div>
       
       <script>
         
         const sidebar = document.querySelector('.sidebar');
-        const toggleBtn = document.querySelector('.toggle-sidebar-btn');
+       const toggleBtn = document.querySelector('.toggle-sidebar-btn');
         
         toggleBtn.addEventListener('click', () => {
           sidebar.classList.toggle('active');
+          
+          
+          
         });
       </script>
+      <div>
       
+        <div id="data-output"></div>
+        
+
+        
       
+      <script src="npalphascript.js"></script>
      
-   
-      
-      <div id="card"></div>
-      
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <script>
-        Access-Control-Allow-origin *:
-        $(function() {
-          $.getJSON("alphadata.json", function(data) {
-            $("#card").html(
-              `<div class="card">
-                <div class="card-thumbnail" style="background-image: url(${data.thumbnail_url})"></div>
-                <div class="card-body">
-                  <div class="card-title">${data.channel_title}</div>
-                  <div class="card-channel">${data.platform}</div>
-                  <div class="card-views">${data.total_view_count} views</div>
-                </div>
-              </div>`
-            );
-          });
-        });
-      </script>
       
       
     
 
     
-
-
 </body>
 
 <footer>

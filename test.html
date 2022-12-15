@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="test.css" defer>
+    <title>No Pixel India</title>
+    <meta charset="UTF-8">
+    <link href="https://www.thefoundrytypes.com/fonts/architype-stedelijk/#:~:text=Architype%20Stedelijk%20is%20part%20of,fonts%20from%20his%20experimental%20alphabets.">
+
+    <style>
+        /* Add the viewport here instead of in the meta tag */
+        @viewport { width: device-width; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="NoPixelLogo2" alt="No Pixel logo" class="logo">
+            <div class="header-text">
+                <nav>
+                    <ul>
+                        <li><a href="https://www.nopixel.net/upload/index.php">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Creators</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Suggestions</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="sidebar" id="data-sidebar-output">
+        <h1>Support our streamers</h1>
+    </div>
+    <div class="toggle-sidebar-btn">LIVE NOW 🔴</div>
+
+    <script>
+        const sidebar = document.querySelector('.sidebar');
+        const toggleBtn = document.querySelector('.toggle-sidebar-btn');
+
+        toggleBtn.addEventListener('click', () => {
+            sidebar.classList.toggle('active');
+        });
+    </script>
+
+    <div id="data-output"></div>
+
+    <script src="npalphascript.js" defer></script>
+</body>
+
+<footer>
+    <p></p>
+</footer>
