@@ -6,17 +6,19 @@ body{
     font-weight: 400;
     overflow-x: hidden;
 }
+
 .container{
     width: 80%;
     margin: 0% auto;
     
 }
 .header-text{
-  font-size: large; /*not working */
+  font-size: 10px; /*not working */
 }
 header{
     background: #55d6aa;
     margin-top: 1px;
+    font-size: large; /* not working */
 
 }
 header::after{
@@ -85,31 +87,21 @@ nav a:hover::before{
     margin: 2px; /* Center the container horizontally on the page */
     width: 100%; /* Adjust the width of the container to fit multiple cards on one line */
     display: inline-block; 
+    border-radius: 10px; /* dosent work */
  } 
   
   .card {
     background-color: #222;
     padding: 1rem;
     border: 1px;
-    border-radius: 10px;
+    border-radius: 10px; /* dosent work */
     width: 20%;
     margin-right: -270px;
     margin-top: 20px;
     margin-left: 300px;
-   /* display: inline-block; */
+   
     float: left;
-   /* margin-top: 100px;
-    display: inherit;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    flex-direction: column;
-    border-radius: 10px;
-    margin: auto;
-    background-color: #fff;
-    width: 400px;
-    float: left;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); */
+ 
   }
   .card:hover{
     transform: scale(1.05);
@@ -117,6 +109,8 @@ nav a:hover::before{
   }
  
   .card-thumbnail {
+    background-size: 325px 230px;
+    background-position: top;
     border-radius: 10px;
 
   
@@ -132,25 +126,32 @@ nav a:hover::before{
   }
   .card-bottom{
     border-radius: 10px;
+    
+
 
   }
   .card-title {
-    background-color: rgb(215, 250, 248);
+    background-color: rgb(5, 5, 5);
    border-radius: 10px;
-   
-   
+   padding: 8px;
+   margin-left: 0px;
     margin-bottom: 8px;
     font-size: 25px;
     font-weight: bold;
     float: left;
+    color: #55d6aa;
+    
   }
   .platform{
     display: block;
-    background-color: rgb(215, 250, 248);
+    background-color: rgb(12, 1, 1);
     font-size: 25px;
-    float:left;
+    float:right;
     border-radius: 10px;
     margin-right: 15px;
+    color: red;
+    padding: 8px;
+    box-shadow: #000;
   }
   
   .card-channel {
@@ -175,7 +176,7 @@ nav a:hover::before{
     color: #fff;
     transform: translateX(-100%);
     transition: transform 0.3s ease-in-out;
-    ;
+    
   }
   
   .sidebar.active {
@@ -199,10 +200,121 @@ nav a:hover::before{
     cursor: pointer;
   }
  .current_watching{
-  background-color: #55d6aa;
+  border-radius: 6px;
+  background-color: #55d6ab00;
   font-size: large;
+  float: right;
+  color: #fff;
  }
 h1{
   font-family: 'Courier New', Courier, monospace;
   font-size: medium;
 }
+.sidebar-container{
+  padding: 1px;
+}
+.sidbar-content{
+
+display: flex;
+
+
+border-bottom : 1px solid rgb(7, 0, 0);
+
+
+}
+.sidebar-container h5{
+  padding: 1px;
+  color: rgb(248, 244, 244);
+  font-size: 15px;
+  font-style: italic;
+}
+
+.sidebar-content {
+  display: flex;
+  padding: 15px;
+  border-bottom: 1px solid rgb(7, 0, 0);
+}
+
+.sidebar-content:hover {
+  background-color: rgb(15, 14, 14);
+}
+
+
+.sidebar-content-description p{
+  font-size: large;
+  color: rgb(0, 0, 0);
+  flex-direction: row;
+  font-style: italic;
+  background-color: rgba(243, 242, 242, 0);
+  border-radius: 10px;
+  border:#777;
+  font-style: italic;
+  bottom: 0;
+  text-decoration: none;
+
+}
+.sidebar-content h5 {
+  font-size: 18px;
+  font-weight: bold;
+  font-style: italic;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.offline-mode h5 {
+  font-size: 200px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-container p {
+  margin: 0;
+}
+
+.footer-container ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.footer-container ul li {
+  margin-left: 20px;
+}
+
+.footer-container ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-container ul li a:hover {
+  color: #ccc;
+}
+.work-in-progress{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+  
+  

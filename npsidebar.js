@@ -9,14 +9,21 @@ fetch("alphadata.json")
         out +=`
 
 
+
         <div id="data-sidbar-output">
-        
-        <div class="sidbar-content">
-        <div class="sidebar-content-title"> <h5> 🔴 ${product.channel_title}|| </h5> </div>
-        <div class="sidbar-content-description"><p1> ${product.stream_details.title} </p1> </div>
-
-
+        <div class="sidebar-container">
+          <div class="sidbar-content">
+          <h5> ${product.channel_title}</h5>
+            <a href="${product.stream_details.stream_link}" class="sidebar-content-title">
+              
+            </a>
+            <a href="${product.stream_details.stream_link}" class="sidebar-content-description">
+              <p>${product.stream_details.title}</p>
+            </a>
+          </div>
         </div>
+      </div>
+      
            
         `;
 

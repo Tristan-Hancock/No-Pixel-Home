@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <head>
     <link rel="stylesheet" href="npalphacss.css">
     <meta charset="UTF-8">
@@ -10,23 +11,66 @@
 
 </head>
 <body>
-    <header>
-        <div class="container">
-            <img src="NoPixelLogo2"  class="logo">
-        <div class="header-text">
-            <nav>
-                <ui>
-                <li><a href="https://www.nopixel.net/upload/index.php" target="_blank">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Creators</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Suggestions</a></li>
-            </ui>
-            </nav>
-        </div>
-        </div>
-    </header>
-   
+  <!-- writing the css here for dialog boxes-->
+  <style>
+  .dialog {
+    color: aliceblue;
+    display: none;
+    position: absolute;
+    background-color: rgb(73, 69, 69);
+    border: 1px solid black;
+    padding: 5px;
+    font-style: italic;
+    border-radius: 10px;
+    
+  }
+
+  nav li:hover .dialog {
+    display: block;
+  }
+</style>
+
+<header>
+  <div class="container">
+    <img src="NoPixelLogo2" class="logo">
+    <div class="header-text">
+      <nav>
+        <ui>
+          <li><a href="https://www.nopixel.net/upload/index.php" target="_blank">Home</a></li>
+          <li>
+            
+            <a href="alphaaboutNp.html">About</a>
+          
+            <div class="dialog">
+              <p>Check out this page for more information about  No Pixel India!</p>
+            </div>
+          </li>
+          <li>
+            <a href="workinprogressite.html">Creators</a>
+            <div class="dialog">
+              <p>Check out this page for more information about our No Pixel India Creators!</p>
+            </div>
+          </li>
+          <li>
+            <a href="workinprogressite.html">Contact</a>
+            <div class="dialog">
+              <p>Contact us!</p>
+            </div>
+          </li>
+          <li>
+            <a href="workinprogressite.html">Suggestions</a>
+            <div class="dialog">
+              <p>Give us suggestions about this site! We are always looking forward to making it better!</p>
+            </div>
+          </li>
+        </ui>
+      </nav>
+    </div>
+  </div>
+</header>
+
+  
+
    
     <script src="npsidebar.js">
 
@@ -37,7 +81,7 @@
 
       
       <div class="sidebar" id="data-sidebar-output"> 
-        <h1> Support our streamers </h1>
+       
       </div> 
         
         
@@ -47,7 +91,7 @@
 
         
       </div>
-      <div class="toggle-sidebar-btn">WATCH OUR STREAMERS LIVE🔴</div>
+      <div class="toggle-sidebar-btn">SEE WHOS LIVE CLICK HERE 🔴⬇</div>
       
       <script>
         
@@ -76,8 +120,16 @@
 
     
 </body>
-
 <footer>
+  <div class="footer-container">
+    <p>No Pixel India Streamer Website Developed by Twisty, FrosTy</p>
+    <ul>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms of Use</a></li>
+      <li><a href="https://www.instagram.com/nopixel.india/">Instagram</a></li>
+      <li><a href="https://discord.gg/a2yTQpUPp7">Discord</a></li>
+    </ul>
+  </div>
+</footer> 
 
-        <p></p> 
-</footer>
+</html>
