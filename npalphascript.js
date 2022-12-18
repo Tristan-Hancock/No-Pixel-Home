@@ -1,13 +1,13 @@
-fetch("alphadata.json")
+fetch("betadata.json")
 .then(function(response){
     return response.json();
 })
-.then(function(alphadata){
+.then(function(betadata){
     let placeholder = document.querySelector("#data-output");
     let out = "";
 
     // check this bs 
-    if (alphadata.length === 0) {
+    if (betadata.length === 0) {
         // this better fucking work
         out = `
         <div class="offline-mode">
@@ -24,10 +24,18 @@ fetch("alphadata.json")
         `
     } else {
         // if this dosent run re check above 
-        for(let product of alphadata){
+        for(let product of betadata){
             out +=`
             <div id="data-output">
             <div class= "card">
+            <style>
+            .card{
+                background-color: #222;
+            }
+            
+
+
+            </style
             <div class="card-container">
             <a href="${product.stream_details.stream_link}" target="_blank">
             <div class="card-thumbnail" style="background-image: url(${product.stream_details.thumbnail_url});">
@@ -36,7 +44,10 @@ fetch("alphadata.json")
             </div> </a>
             <div class="card-body">
             <div class="card-bottom">
-            <div class="card-title"> ${product.channel_title}        </div>
+            <div class="card-title"> ${product.channel_title}   
+           
+            
+            </div>
             <div class="platform"> ${product.stream_details.platform}  </div>
             
               
